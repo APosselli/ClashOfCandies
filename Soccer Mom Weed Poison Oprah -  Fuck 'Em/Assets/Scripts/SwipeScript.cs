@@ -26,6 +26,11 @@ public class SwipeScript : MonoBehaviour
     {
         if (!FingerInput.GetInputPresent() || !FingerInput.GetFingerDown())
         {
+            if (FingerInput.GetInputPresent() && !needsRelease && FingerInput.GetFingerReleased())
+            {
+                gameObject.transform.position = objectPos;
+            }
+
             needsRelease = false;
             return;
         }
