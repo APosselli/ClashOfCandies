@@ -36,17 +36,20 @@ public class HandController : MonoBehaviour
         {
             premiumCandy();
         }
-        m_TimeElapsed += Time.deltaTime;
-        m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd ;
-        if(m_percentTravelled >= 1) //Game Over Here
+        if (!StoreScript.storeActive)
         {
-            GameState.Instance.InvokeGameOver();
-        }
-        else
-        {
-            Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
-            transform.position = newPos;
-        }        
+            m_TimeElapsed += Time.deltaTime;
+            m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd;
+            if (m_percentTravelled >= 1) //Game Over Here
+            {
+                GameState.Instance.InvokeGameOver();
+            }
+            else
+            {
+                Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
+                transform.position = newPos;
+            }
+        } 
     }
     public void slap()
     {

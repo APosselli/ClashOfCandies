@@ -27,7 +27,6 @@ public class CandyGenerator : MonoBehaviour
         if (initCurCandy.tag == "good")
         {
             ParticleSystem goodEffect = initCurCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            Debug.Log(goodEffect);
             goodEffect.Play(true);
             GameState.Instance.SetCurrentCandy(false);
             
@@ -60,7 +59,6 @@ public class CandyGenerator : MonoBehaviour
         if (preNextCandy.tag == "good")
         {
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            Debug.Log(goodEffect);
             goodEffect.Play(true);
             GameState.Instance.SetCurrentCandy(false);
         }
