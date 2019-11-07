@@ -83,7 +83,7 @@ public class GameState : MonoBehaviour
         gameOverTextObject.SetActive(true);
     }
 
-    public void ResetLevel()
+    private void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
