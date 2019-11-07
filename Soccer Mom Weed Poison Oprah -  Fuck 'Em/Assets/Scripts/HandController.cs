@@ -58,7 +58,7 @@ public class HandController : MonoBehaviour
         {
             transform.position = m_startingPosition;
             m_TimeElapsed = 0 - m_TimeBeforeReach; //resets to beginning of initial wait time * 2;
-            premiumCandy--; //replace with calls to gamestate once added
+            premiumCandyCount--; //replace with calls to gamestate once added
         }
 
     }
