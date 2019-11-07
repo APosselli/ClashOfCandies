@@ -6,6 +6,7 @@ TagManager:
   tags:
   - good
   - bad
+  - LevelText
   layers:
   - Default
   - TransparentFX
