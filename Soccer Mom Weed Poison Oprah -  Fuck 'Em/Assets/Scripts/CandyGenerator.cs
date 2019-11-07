@@ -27,11 +27,14 @@ public class CandyGenerator : MonoBehaviour
             Vector3 offset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
             GameObject newCandy = Instantiate(candyList[index], GameObject.Find("CandyBag").transform);
             newCandy.transform.localPosition = offset;
+            newCandy.transform.localRotation = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
             newCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
+            newCandy.GetComponent<SpriteRenderer>().sortingOrder = number - 1 - i;
             candyBag.Enqueue(candyList[index]);
         }
         GameObject initCurCandy = Instantiate(candyList[Random.Range(0, candyList.Count)], GameObject.Find("CurrentCandy").transform);
-        initCurCandy.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        initCurCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
+        //initCurCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         if (initCurCandy.tag == "good")
         {
             ParticleSystem goodEffect = initCurCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
@@ -64,7 +67,7 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.parent = GameObject.Find("CurrentCandy").transform;
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
-        preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
         if (preNextCandy.tag == "good")
         {
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
@@ -90,7 +93,7 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.parent = GameObject.Find("CurrentCandy").transform;
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
-        preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
         if (preNextCandy.tag == "good")
         {
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();

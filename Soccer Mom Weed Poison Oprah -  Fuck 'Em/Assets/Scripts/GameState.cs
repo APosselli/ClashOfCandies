@@ -112,7 +112,7 @@ public class GameState : MonoBehaviour
         GameMetaInfo.Instance.SwitchPlayer();
     }
 
-    public void ResetLevel()
+    private void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
