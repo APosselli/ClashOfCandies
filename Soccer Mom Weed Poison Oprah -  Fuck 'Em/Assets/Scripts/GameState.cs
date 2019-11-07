@@ -20,7 +20,7 @@ public class GameState : MonoBehaviour
     private bool gameOver = false;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         scoreText = scoreTextObject.GetComponent<UnityEngine.UI.Text>();
         livesText = livesTextObject.GetComponent<UnityEngine.UI.Text>();

@@ -1,0 +1,1999 @@
+fileFormatVersion: 2
+guid: 0259de457c77c364e9f0d1b10209e67f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3032287171981689051
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_0
+  - first:
+      213: 1427801406533149140
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_1
+  - first:
+      213: 2116651592755831811
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_2
+  - first:
+      213: 2244093362905899706
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_3
+  - first:
+      213: 909358950805345403
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_4
+  - first:
+      213: -5153638323327157685
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_5
+  - first:
+      213: -6454530974261739438
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_6
+  - first:
+      213: -8380081097655368766
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_7
+  - first:
+      213: 7657473610161080545
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_8
+  - first:
+      213: 1597643765752729239
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_9
+  - first:
+      213: 3844958485756575854
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_10
+  - first:
+      213: 2702085951969008341
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_11
+  - first:
+      213: 4138405201244458139
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_12
+  - first:
+      213: -3622222269767705565
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_13
+  - first:
+      213: -4166520800435139913
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_14
+  - first:
+      213: -1900607174945712459
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_15
+  - first:
+      213: -5110015632863647640
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_16
+  - first:
+      213: 682987295117634797
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_17
+  - first:
+      213: 1988524344696960433
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_18
+  - first:
+      213: 6845014970254926887
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_19
+  - first:
+      213: -190625966877051559
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_20
+  - first:
+      213: -3768011201224079361
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_21
+  - first:
+      213: -2871478801088622382
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_22
+  - first:
+      213: 4903660119255240012
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_23
+  - first:
+      213: 7480391615575580496
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_24
+  - first:
+      213: 2053069343440057376
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_25
+  - first:
+      213: -1808391515136050047
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_26
+  - first:
+      213: -6622470022257056815
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_27
+  - first:
+      213: 2359559746931295124
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_28
+  - first:
+      213: -307470244447436735
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_29
+  - first:
+      213: 203568016035032423
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_30
+  - first:
+      213: 8454618516337766194
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_31
+  - first:
+      213: 1678899499573523342
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_32
+  - first:
+      213: -7326180388992947505
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_33
+  - first:
+      213: 1039066800658220962
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_34
+  - first:
+      213: -302473897475862062
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_35
+  - first:
+      213: 8684280669038878148
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_36
+  - first:
+      213: 7084329770543450897
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_37
+  - first:
+      213: 8716688759585702638
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_38
+  - first:
+      213: 6550164466519178082
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_39
+  - first:
+      213: -2352372524054978556
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_40
+  - first:
+      213: 7214639574226197104
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_41
+  - first:
+      213: -885830905864909376
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_42
+  - first:
+      213: 8033276637472050150
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_43
+  - first:
+      213: -4675968520817320678
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_44
+  - first:
+      213: 2178216990845361353
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_45
+  - first:
+      213: 919696053344026449
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_46
+  - first:
+      213: 3909538502832414107
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_47
+  - first:
+      213: -6496548265936091928
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_48
+  - first:
+      213: -4704976756198698210
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_49
+  - first:
+      213: 2287704818046665995
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_50
+  - first:
+      213: 4731606792855502398
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_51
+  - first:
+      213: 901933091886983040
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_52
+  - first:
+      213: 4930907982750850720
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_53
+  - first:
+      213: -1756879902401033603
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_54
+  - first:
+      213: 6930139397728273978
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_55
+  - first:
+      213: -3785803693929762416
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_56
+  - first:
+      213: -3968813507889474887
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_57
+  - first:
+      213: -5522621592401951296
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_58
+  - first:
+      213: -6073014712567763182
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_59
+  - first:
+      213: 1169074481684722497
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_60
+  - first:
+      213: -4546573243717483363
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_61
+  - first:
+      213: -7183402950132950524
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_62
+  - first:
+      213: 3143650988445226400
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_63
+  - first:
+      213: -6743116636645391462
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_64
+  - first:
+      213: 7058366622342614341
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_65
+  - first:
+      213: -8614404618433739534
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_66
+  - first:
+      213: -2340395131246740503
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_67
+  - first:
+      213: 5914817584463714001
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_68
+  - first:
+      213: -395511417247767669
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_69
+  - first:
+      213: 1710622802035229315
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_70
+  - first:
+      213: 2559535676933447862
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_71
+  - first:
+      213: -639429836792236855
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_72
+  - first:
+      213: -7415140877867966508
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_73
+  - first:
+      213: -1056847389659355880
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_74
+  - first:
+      213: 4532878892042479404
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_75
+  - first:
+      213: -2292546556375072971
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_76
+  - first:
+      213: -2870316976029232606
+    second: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_77
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ce021c7d475b64b85837ddd2669bda
+      internalID: 3032287171981689051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650b74ef00bfd1d4aa96ff2be3f86655
+      internalID: 1427801406533149140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ecdc061b0763f40bbd6982e7090b21
+      internalID: 2116651592755831811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c734a691063f63e4c98c6dc987f5fcd3
+      internalID: 2244093362905899706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe154ee1c831a6439f89e0e7f48ba3e
+      internalID: 909358950805345403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_5
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1154
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa142d7e4add344e92cd4e967c878b7
+      internalID: -5153638323327157685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af260bc5055c9bd4f9caceecfd22f89d
+      internalID: -6454530974261739438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f837825af6cec46977b66a83ccd399
+      internalID: -8380081097655368766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_8
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2294608a1aa7f4f8b17d97746eb8bc
+      internalID: 7657473610161080545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43ac5cbcce87db4b8429fdadfce9dce
+      internalID: 1597643765752729239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_10
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2a2899654ec0943878a1ee2a2ab741
+      internalID: 3844958485756575854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1062
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0addb876e4698a42bc0bb1d1dcd19b9
+      internalID: 2702085951969008341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b4f8a221613a247a1cf0b8a6dc9b00
+      internalID: 4138405201244458139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16a268ce2fd5f7449740ebafff2f91f
+      internalID: -3622222269767705565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_14
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdebf3a479a0744c86ccd9381965461
+      internalID: -4166520800435139913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_15
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945ad6125f65bc04cb80d047e209a958
+      internalID: -1900607174945712459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_16
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0345b95c7e1c0c54ba4eb69be545586e
+      internalID: -5110015632863647640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_17
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 970
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88585ad941397b4685ec586eb570638
+      internalID: 682987295117634797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3d8a8dff0a94a4bb05bacb0534f800
+      internalID: 1988524344696960433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_19
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6bf7d7ea55c0b4d8b58c3a3734767c
+      internalID: 6845014970254926887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_20
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c105e095fd054c145ad93f87803610cc
+      internalID: -190625966877051559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_21
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643328b4eb8413c48b71cc4094a996df
+      internalID: -3768011201224079361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b528ff7c0462e1c41a6e7e01b19369c6
+      internalID: -2871478801088622382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_23
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 878
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affa46c52c9d76f43a19d93c481d6191
+      internalID: 4903660119255240012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca35d950df21c14db70bc91cec74a89
+      internalID: 7480391615575580496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_25
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b15d0c04bc0674e84f6ed5b8881bab
+      internalID: 2053069343440057376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_26
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfaf3bf038a92184881325088af25c55
+      internalID: -1808391515136050047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_27
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bbf7018cbbe574d96239b1754f1b7d
+      internalID: -6622470022257056815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_28
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0864dc831bba25345bcdec9a49af95af
+      internalID: 2359559746931295124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 786
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d92ce04bdd228043895fb0b9891d772
+      internalID: -307470244447436735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edcee7d64c41954faca54b7b36a3c4d
+      internalID: 203568016035032423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_31
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1524a6c32cf23a24eae6999135cc3f8a
+      internalID: 8454618516337766194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_32
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea24f1d1c448ce41a7f44a3d076665a
+      internalID: 1678899499573523342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_33
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055252f17c33fb6448cc4208a6a5515f
+      internalID: -7326180388992947505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_34
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371c3db69476ad84f9f1f05dedeeae35
+      internalID: 1039066800658220962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_35
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 694
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a866e6da2a7c534bb7cac99f2f720f8
+      internalID: -302473897475862062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af3381a65b705642967aa9b81f4f954
+      internalID: 8684280669038878148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_37
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d099e56df11cda4cb7de1b97801d581
+      internalID: 7084329770543450897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_38
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1298c56198d7d6b49941cb6d5a9ecfef
+      internalID: 8716688759585702638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_39
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1633d08ee1572e48a5ef5e00410d832
+      internalID: 6550164466519178082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_40
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0ab1bd0467759489d97f9d76b51668
+      internalID: -2352372524054978556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_41
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 602
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f120d436bc227c4f876268e96dfd9b3
+      internalID: 7214639574226197104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1634d27bb35fd4e9b351f5c84923eb
+      internalID: -885830905864909376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_43
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f790957c1d6b4f40be864dab10b12b8
+      internalID: 8033276637472050150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_44
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8579d571d92bd954497a2801afb32dd8
+      internalID: -4675968520817320678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_45
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46236dc186691c4aa7bf7fe93add8c4
+      internalID: 2178216990845361353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_46
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928fb50eb56054148bd9acc51c168c28
+      internalID: 919696053344026449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_47
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 510
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08fed1d117b45e4080f181801babc9e
+      internalID: 3909538502832414107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14686d6cdb926fd47a1b05326a46cc0e
+      internalID: -6496548265936091928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_49
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4690a6c7ac7c284d98c0707ff5c3ce0
+      internalID: -4704976756198698210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_50
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b6d7f04036a6d499f4bdc523a86734
+      internalID: 2287704818046665995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_51
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547824146368e0349bab1d47563adb06
+      internalID: 4731606792855502398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3eac7cf3a00474dac95c6ef394b201
+      internalID: 901933091886983040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_53
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 418
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27546da591c714149bc696dd166fd06c
+      internalID: 4930907982750850720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bf56afbecd4c242afc81cf126c50cd
+      internalID: -1756879902401033603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_55
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916327d2b17642144a592b4d792cd346
+      internalID: 6930139397728273978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_56
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48a230a70149544ebffc5772c2d5c89
+      internalID: -3785803693929762416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_57
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1387851210b2b749a1b9229f3eb923c
+      internalID: -3968813507889474887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_58
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeac2c3809e9e449afa7541cf164128
+      internalID: -5522621592401951296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_59
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 326
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f16209b4ece5b842938a6ced736ac15
+      internalID: -6073014712567763182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a3786a47d90d54a9ce890f882d8b2d
+      internalID: 1169074481684722497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_61
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed351ee76fa0ee48bd0298fe980434a
+      internalID: -4546573243717483363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_62
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f089634df6a5442bfa4309a6d3184e
+      internalID: -7183402950132950524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_63
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79317f39985ba0049aa31299788cf558
+      internalID: 3143650988445226400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_64
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f8bc1484d99434a93897c53e97f321
+      internalID: -6743116636645391462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_65
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 234
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7149a8371189624d98d46b88bdc828c
+      internalID: 7058366622342614341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50bbfca270ba014fb70cfe640009975
+      internalID: -8614404618433739534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_67
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70823a03e0ea5841a4449ebe2746208
+      internalID: -2340395131246740503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_68
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932ce343f9ae37c49bb39f61900b6ad5
+      internalID: 5914817584463714001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_69
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51afedde41a78144593bc9173b89267b
+      internalID: -395511417247767669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_70
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e2fc322bc587e48a589fe7d7125a85
+      internalID: 1710622802035229315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_71
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 142
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f3a9dfb27497e42810b2385bf559e1
+      internalID: 2559535676933447862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb90eab56e22c984198747bf434b3fbe
+      internalID: -639429836792236855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_73
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe6856a428bc34438192954bf6ce0e5
+      internalID: -7415140877867966508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_74
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a646ad301e04284194426caad4937b5
+      internalID: -1056847389659355880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_75
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c4bcbaccb4f9146befec3beea5ffee
+      internalID: 4532878892042479404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_76
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ecd5a7c1322804f9808c4db6a493c9
+      internalID: -2292546556375072971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 589-5898415_download-candy-crush-saga-sprites-clipart-candy-crush_77
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 50
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d18aa63f8e9ef45a3e711e43f6cf14
+      internalID: -2870316976029232606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
