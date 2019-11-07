@@ -37,6 +37,7 @@ public class GameState : MonoBehaviour
         gameOverText.text = "";
 
         globalInstance = this;
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -60,6 +61,7 @@ public class GameState : MonoBehaviour
                 levelText.text = "";
                 waitingForRelease = false;
                 betweenLevels = false;
+                Time.timeScale = 1f;
             }
         }
     }
@@ -102,6 +104,7 @@ public class GameState : MonoBehaviour
         gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
         GameMetaInfo.Instance.CandiesInLevel = 0;
         GameMetaInfo.Instance.SetPlayer1();
+        Time.timeScale = 0f;
     }
 
     public void CompleteLevel()
@@ -110,6 +113,7 @@ public class GameState : MonoBehaviour
         betweenLevels = true;
         levelFinished = true;
         GameMetaInfo.Instance.SwitchPlayer();
+        Time.timeScale = 0f;
     }
 
     private void ResetLevel()
