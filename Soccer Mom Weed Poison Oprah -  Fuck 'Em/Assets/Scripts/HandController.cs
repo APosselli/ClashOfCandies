@@ -14,6 +14,7 @@ public class HandController : MonoBehaviour
     public const float m_timeToEnd = 10.0f;
     public const float m_TimeBeforeReach = 2;
     private float m_TimeElapsed;
+    private int premiumCandyCount = 1, slaps = 3;
 
     private bool reaching = false;
     // Start is called before the first frame update
@@ -28,14 +29,6 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            slap();
-        }
-        if(Input.GetKeyDown(KeyCode.B))
-        {
-            premiumCandy();
-        }
         m_TimeElapsed += Time.deltaTime;
         m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd ;
         if(m_percentTravelled >= 1) //Game Over Here
@@ -50,17 +43,23 @@ public class HandController : MonoBehaviour
     }
     public void slap()
     {
-        if (m_TimeElapsed > m_TimeBeforeReach)
+        if (m_TimeElapsed > m_TimeBeforeReach && slaps > 0)
         {
             //m_TimeElapsed = m_TimeElapsed - m_timeToEnd / 10;
             transform.position = m_startingPosition;
             m_TimeElapsed = 0.0f; //resets to beginning of initial wait time
+            slaps--;
         }
     }
 
     public void premiumCandy()
     {
-        transform.position = m_startingPosition;
-        m_TimeElapsed = 0 - m_TimeBeforeReach; //resets to beginning of initial wait time * 2;
+        if(premiumCandyCount > 0)
+        {
+            transform.position = m_startingPosition;
+            m_TimeElapsed = 0 - m_TimeBeforeReach; //resets to beginning of initial wait time * 2;
+            premiumCandy--; //replace with calls to gamestate once added
+        }
+
     }
 }
