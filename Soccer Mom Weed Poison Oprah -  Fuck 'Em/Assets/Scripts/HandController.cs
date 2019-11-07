@@ -11,8 +11,8 @@ public class HandController : MonoBehaviour
     private Vector3 m_startingPosition;
     private Vector3 m_endPosition; // = new Vector3(0, 0, 0);
     private float m_yDiff, m_percentTravelled;
-    private const float m_timeToEnd = 10.0f;
-    private const float m_TimeBeforeReach = 2;
+    public const float m_timeToEnd = 10.0f;
+    public const float m_TimeBeforeReach = 2;
     private float m_TimeElapsed;
 
     private bool reaching = false;
@@ -40,7 +40,7 @@ public class HandController : MonoBehaviour
         m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd ;
         if(m_percentTravelled >= 1) //Game Over Here
         {
-            //GameState.Instance.InvokeGameOver();
+            GameState.Instance.InvokeGameOver();
         }
         else
         {
