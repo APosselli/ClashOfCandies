@@ -24,6 +24,7 @@ public class HandController : MonoBehaviour
         m_startingPosition = transform.position;
         m_yDiff = m_startingPosition.y - m_endPosition.y;
         m_TimeElapsed = 0.0f;
+        premiumCandyCount = GameMetaInfo.Instance.PremiumCandy;
     }
 
     // Update is called once per frame
@@ -58,7 +59,9 @@ public class HandController : MonoBehaviour
         {
             transform.position = m_startingPosition;
             m_TimeElapsed = 0 - m_TimeBeforeReach; //resets to beginning of initial wait time * 2;
-            premiumCandyCount--; //replace with calls to gamestate once added
+            //premiumCandyCount--; //replace with calls to gamestate once added
+            GameMetaInfo.Instance.PremiumCandy--;
+            premiumCandyCount = GameMetaInfo.Instance.PremiumCandy;
         }
 
     }

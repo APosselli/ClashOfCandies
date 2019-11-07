@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameMetaInfo : MonoBehaviour
 {
     static private GameMetaInfo metaInfoInstance;
-    private int player1PremiumCandy;
-    private int player2PremiumCandy;
+    private int player1PremiumCandy = 1;
+    private int player2PremiumCandy = 1;
     private bool isPlayer1 = true;
     private string player1Name = "Player 1";
     private string player2Name = "Player 2";
