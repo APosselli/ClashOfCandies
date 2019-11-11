@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class CandyGenerator : MonoBehaviour
 {
-    public static int number = 20;
+    public int number = 20;
+    private int intialNumber;
+    public int levelCandyIncrease = 5;
     public List<GameObject> candyList;
-    private static Queue<GameObject> candyBag = new Queue<GameObject>();
+    private Queue<GameObject> candyBag = new Queue<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
+        if (GameMetaInfo.Instance.CandiesInLevel == 0)
+        {
+            GameMetaInfo.Instance.CandiesInLevel = number;
+        }
+        else
+        {
+            number = GameMetaInfo.Instance.CandiesInLevel;
+        }
+
         for (int i = 0; i < number - 1; i++)
         {
             int index = Random.Range(0, candyList.Count);
@@ -45,7 +56,7 @@ public class CandyGenerator : MonoBehaviour
 
     }
 
-    public static void RemoveCandyInBag()
+    public void RemoveCandyInBag()
     {
         GameObject currentCandy = GameObject.Find("CurrentCandy").transform.GetChild(0).gameObject;
         Destroy(currentCandy);
@@ -70,7 +81,7 @@ public class CandyGenerator : MonoBehaviour
         newNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
     }
 
-    public static void RemoveLastInBag()
+    public void RemoveLastInBag()
     {
         GameObject currentCandy = GameObject.Find("CurrentCandy").transform.GetChild(0).gameObject;
         Destroy(currentCandy);
@@ -93,9 +104,12 @@ public class CandyGenerator : MonoBehaviour
         }
     }
 
-    public static void RemoveLast()
+    public void RemoveLast()
     {
         GameObject currentCandy = GameObject.Find("CurrentCandy").transform.GetChild(0).gameObject;
         Destroy(currentCandy);
+
+        GameMetaInfo.Instance.CandiesInLevel = GameMetaInfo.Instance.CandiesInLevel + levelCandyIncrease;
+        GameState.Instance.CompleteLevel();
     }
 }

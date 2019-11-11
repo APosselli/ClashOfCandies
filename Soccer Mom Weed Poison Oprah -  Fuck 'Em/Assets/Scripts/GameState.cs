@@ -8,9 +8,12 @@ public class GameState : MonoBehaviour
     public GameObject scoreTextObject;
     public GameObject livesTextObject;
     public GameObject candyTextObject; // TODO: Remove when we add art assets
+    public GameObject levelTextObject;
     public GameObject gameOverTextObject;
     private UnityEngine.UI.Text scoreText;
     private UnityEngine.UI.Text livesText;
+    private UnityEngine.UI.Text levelText;
+    private UnityEngine.UI.Text gameOverText;
     private UnityEngine.UI.Text candyText;
 
     private static GameState globalInstance;
@@ -18,21 +21,29 @@ public class GameState : MonoBehaviour
     private int lives = 3;
     private bool waitingForRelease = false;
     private bool gameOver = false;
+    private bool betweenLevels = true;
+    private bool levelFinished = false;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         scoreText = scoreTextObject.GetComponent<UnityEngine.UI.Text>();
         livesText = livesTextObject.GetComponent<UnityEngine.UI.Text>();
+        levelText = levelTextObject.GetComponent<UnityEngine.UI.Text>();
+        gameOverText = gameOverTextObject.GetComponent<UnityEngine.UI.Text>();
         candyText = candyTextObject.GetComponent<UnityEngine.UI.Text>();
 
+        levelText.text = GameMetaInfo.Instance.PlayerName + "'s turn.\nTap to begin...";
+        gameOverText.text = "";
+
         globalInstance = this;
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!gameOver)
+        if (!gameOver && !betweenLevels)
             return;
 
         if (!FingerInput.GetInputPresent())
@@ -42,7 +53,17 @@ public class GameState : MonoBehaviour
             waitingForRelease = true;
 
         if (waitingForRelease && FingerInput.GetFingerReleased())
-            ResetLevel();
+        {
+            if ((betweenLevels && levelFinished) || gameOver)
+                ResetLevel();
+            else if (betweenLevels)
+            {
+                levelText.text = "";
+                waitingForRelease = false;
+                betweenLevels = false;
+                Time.timeScale = 1f;
+            }
+        }
     }
 
     public static GameState Instance
@@ -80,12 +101,29 @@ public class GameState : MonoBehaviour
     public void InvokeGameOver()
     {
         gameOver = true;
-        gameOverTextObject.SetActive(true);
+        gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
+        GameMetaInfo.Instance.CandiesInLevel = 0;
+        GameMetaInfo.Instance.SetPlayer1();
+        Time.timeScale = 0f;
+    }
+
+    public void CompleteLevel()
+    {
+        levelText.text = "Level Complete!\nTap to continue...";
+        betweenLevels = true;
+        levelFinished = true;
+        GameMetaInfo.Instance.SwitchPlayer();
+        Time.timeScale = 0f;
     }
 
     private void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public bool BetweenLevels
+    {
+        get { return betweenLevels; }
     }
 
     public bool GameOver

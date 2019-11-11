@@ -15,6 +15,7 @@ public class SwipeScript : MonoBehaviour
     private int swipeTime = 0;
     private bool swiped = false;
     private GameObject currentCandy;
+    private CandyGenerator candyGenerator;
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,14 @@ public class SwipeScript : MonoBehaviour
             needsRelease = true;
 
         currentCandy = GameObject.Find("CurrentCandy");
+        candyGenerator = GameObject.Find("CandyGenerator").GetComponent<CandyGenerator>();
         objectPos = currentCandy.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameState.Instance.GameOver || swipeTime >= CandyGenerator.number)
+        if (GameState.Instance.GameOver || GameState.Instance.BetweenLevels || swipeTime >= candyGenerator.number)
             return;
 
         // If the user isn't touching the screen, the candy should be released
@@ -57,7 +59,7 @@ public class SwipeScript : MonoBehaviour
             touchPos = fingerPos;
         }
 
-        if (Mathf.Abs(touchPos.x - fingerPos.x) >= minSwipeDistance && !swiped && swipeTime < CandyGenerator.number)
+        if (Mathf.Abs(touchPos.x - fingerPos.x) >= minSwipeDistance && !swiped && swipeTime < candyGenerator.number)
         {
             GameObject candyChild = currentCandy.transform.GetChild(0).gameObject;
             // The user swiped left
@@ -94,23 +96,23 @@ public class SwipeScript : MonoBehaviour
             }
 
             // Check if the last candy was swiped
-            if (swipeTime == CandyGenerator.number - 1)
+            if (swipeTime == candyGenerator.number - 1)
             {
-                CandyGenerator.RemoveLast();
+                candyGenerator.RemoveLast();
                 swipeTime++;
                 swiped = true;
             }
             else
             {
-                if (swipeTime == CandyGenerator.number - 2)
+                if (swipeTime == candyGenerator.number - 2)
                 {
-                    CandyGenerator.RemoveLastInBag();
+                    candyGenerator.RemoveLastInBag();
                     swipeTime++;
                     swiped = true;
                 }
-                if (swipeTime < CandyGenerator.number - 2)
+                if (swipeTime < candyGenerator.number - 2)
                 {
-                    CandyGenerator.RemoveCandyInBag();
+                    candyGenerator.RemoveCandyInBag();
                     swipeTime++;
                     swiped = true;
                 }
@@ -123,7 +125,7 @@ public class SwipeScript : MonoBehaviour
         }
 
         // Update the candy position if the user is swiping
-        if (swipeTime < CandyGenerator.number && !needsRelease)
+        if (swipeTime < candyGenerator.number && !needsRelease)
         {
             currentCandy.transform.position = objectPos + new Vector3(cam.ScreenToWorldPoint(fingerPos).x - cam.ScreenToWorldPoint(touchPos).x, 0f, 0f);
         }
