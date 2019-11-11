@@ -96,12 +96,25 @@ public class FacebookIntegration : MonoBehaviour
         
     }
 
-    public void LogInAndShareLinkToFB()
+    public void LogInFacebook()
     {
         var perms = new List<string>() { "public_profile", "email" };
         FB.LogInWithReadPermissions(perms, AuthCallback);
-        FB.ShareLink(
-        new System.Uri("https://developers.facebook.com/"), callback: ShareCallback);
+    }
+
+    public void ShareLinkFacebook()
+    {
+        FB.ShareLink(new System.Uri("https://developers.facebook.com/"), callback: ShareCallback);
+    }
+
+    public void LogOutFacebook()
+    {
+        FB.LogOut();
+    }
+
+    public void FacebookGameRequest()
+    {
+        FB.AppRequest("Do you think you're as good of a parent as I am?");
     }
 
 
