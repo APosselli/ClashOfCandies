@@ -13,7 +13,7 @@ public class HandSwipeControls : MonoBehaviour
     public HandController handController;
     void Start()
     {
-        minSwipeDistance = Screen.height * 30 / 100;
+        minSwipeDistance = Screen.height * 20 / 100;
         cam = Camera.main;
 
         handController = GameObject.Find("Hand").GetComponent<HandController>();

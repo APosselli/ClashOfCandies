@@ -14,6 +14,7 @@ public class SwipeScript : MonoBehaviour
     private bool needsRelease = false;
     private int swipeTime = 0;
     private bool swiped = false;
+    private bool startPosSet = false;
     private GameObject currentCandy;
     private CandyGenerator candyGenerator;
 
@@ -57,7 +58,11 @@ public class SwipeScript : MonoBehaviour
         if (FingerInput.GetFingerPressed())
         {
             touchPos = fingerPos;
+            startPosSet = true;
         }
+
+        if (!startPosSet)
+            return;
 
         if (Mathf.Abs(touchPos.x - fingerPos.x) >= minSwipeDistance && !swiped && swipeTime < candyGenerator.number)
         {
