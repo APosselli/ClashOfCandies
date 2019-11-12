@@ -5,7 +5,6 @@ using UnityEngine;
 public class CandyGenerator : MonoBehaviour
 {
     public int number = 20;
-    private int intialNumber;
     public int levelCandyIncrease = 5;
     public List<GameObject> candyList;
     private Queue<GameObject> candyBag = new Queue<GameObject>();
@@ -38,7 +37,6 @@ public class CandyGenerator : MonoBehaviour
         if (initCurCandy.tag == "good")
         {
             ParticleSystem goodEffect = initCurCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            Debug.Log(goodEffect);
             goodEffect.Play(true);
             GameState.Instance.SetCurrentCandy(false);
             
@@ -71,7 +69,6 @@ public class CandyGenerator : MonoBehaviour
         if (preNextCandy.tag == "good")
         {
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            Debug.Log(goodEffect);
             goodEffect.Play(true);
             GameState.Instance.SetCurrentCandy(false);
         }
@@ -110,8 +107,7 @@ public class CandyGenerator : MonoBehaviour
     {
         GameObject currentCandy = GameObject.Find("CurrentCandy").transform.GetChild(0).gameObject;
         Destroy(currentCandy);
-
-        GameMetaInfo.Instance.CandiesInLevel = GameMetaInfo.Instance.CandiesInLevel + levelCandyIncrease;
         GameState.Instance.CompleteLevel();
+        GameMetaInfo.Instance.CandiesInLevel += levelCandyIncrease;
     }
 }

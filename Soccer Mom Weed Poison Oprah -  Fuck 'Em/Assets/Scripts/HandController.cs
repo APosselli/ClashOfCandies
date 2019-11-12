@@ -31,8 +31,8 @@ public class HandController : MonoBehaviour
     void Update()
     {
         m_TimeElapsed += Time.deltaTime;
-        m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd ;
-        if(m_percentTravelled >= 1) //Game Over Here
+        m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd;
+        if (m_percentTravelled >= 1) //Game Over Here
         {
             GameState.Instance.InvokeGameOver();
         }
@@ -40,8 +40,9 @@ public class HandController : MonoBehaviour
         {
             Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
             transform.position = newPos;
-        }        
+        }
     }
+
     public void slap()
     {
         if (m_TimeElapsed > m_TimeBeforeReach && slaps > 0)
