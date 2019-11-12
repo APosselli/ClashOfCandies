@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMetaInfo : MonoBehaviour
 {
@@ -83,6 +84,16 @@ public class GameMetaInfo : MonoBehaviour
         }
     }
 
+    public void SetPlayer1Name(string name)
+    {
+        player1Name = name;
+    }
+
+    public void SetPlayer2Name(string name)
+    {
+        player2Name = name;
+    }
+
     public void SwitchPlayer()
     {
         isPlayer1 = !isPlayer1;
@@ -96,5 +107,10 @@ public class GameMetaInfo : MonoBehaviour
     public int CandiesInLevel
     {
         get; set;
+    }
+
+    public static void StartGame()
+    {
+        SceneManager.LoadScene("SwipeDemo");
     }
 }

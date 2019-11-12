@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/FacebookSDK/Examples/Pay.unity
     guid: 3ee189cdb21ea4bdb9d7022a0780c44c
   - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 8589e81eb12d60a4cb2fc2668b9444cf
+  - enabled: 1
     path: Assets/Scenes/SwipeDemo.unity
     guid: 79b37700a555e384eb5111f2980fd289
   m_configObjects: {}
