@@ -35,4 +35,10 @@ public class StoreScript : MonoBehaviour
         storeActive = true;
         transform.Find("StorePanel").gameObject.SetActive(true);
     }
+
+    public void SetStoreDeactive()
+    {
+        storeActive = false;
+        transform.Find("StorePanel").gameObject.SetActive(false);
+    }
 }
