@@ -9,6 +9,7 @@ public class CandyGenerator : MonoBehaviour
     public List<GameObject> candyList;
     private Queue<GameObject> candyBag = new Queue<GameObject>();
     private int premCandyNum;
+    public Shader shader;
     public Color goodEdgeColor;
     public Color badEdgeColor;
     public float alphaThreshold = 0.1f;
@@ -27,11 +28,11 @@ public class CandyGenerator : MonoBehaviour
             number = GameMetaInfo.Instance.CandiesInLevel;
         }
 
-        replacematGood = new Material(Shader.Find("Custom/WithOutlineShader"));
+        replacematGood = new Material(shader);
         replacematGood.SetFloat("_OffsetUV", offsetUV);
         replacematGood.SetFloat("_AlphaThreshold", alphaThreshold);
         replacematGood.SetColor("_EdgeColor", goodEdgeColor);
-        replacematBad = new Material(Shader.Find("Custom/WithOutlineShader"));
+        replacematBad = new Material(shader);
         replacematBad.SetFloat("_OffsetUV", offsetUV);
         replacematBad.SetFloat("_AlphaThreshold", alphaThreshold);
         replacematBad.SetColor("_EdgeColor", badEdgeColor);
