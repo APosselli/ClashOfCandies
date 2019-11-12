@@ -30,29 +30,19 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        m_TimeElapsed += Time.deltaTime;
+        m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd;
+        if (m_percentTravelled >= 1) //Game Over Here
         {
-            slap();
+            GameState.Instance.InvokeGameOver();
         }
-        if(Input.GetKeyDown(KeyCode.B))
+        else
         {
-            premiumCandy();
+            Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
+            transform.position = newPos;
         }
-        if (!StoreScript.storeActive)
-        {
-            m_TimeElapsed += Time.deltaTime;
-            m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd;
-            if (m_percentTravelled >= 1) //Game Over Here
-            {
-                GameState.Instance.InvokeGameOver();
-            }
-            else
-            {
-                Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
-                transform.position = newPos;
-            }
-        } 
     }
+
     public void slap()
     {
         if (m_TimeElapsed > m_TimeBeforeReach && slaps > 0)

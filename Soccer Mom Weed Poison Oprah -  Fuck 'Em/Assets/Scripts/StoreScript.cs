@@ -10,7 +10,7 @@ public class StoreScript : MonoBehaviour
 
     // TODO: replace with gamestate variable after merging with Anothoy's work
     public static int money = 999;
-    public static int premCandyNum = 0;
+    private int premCandyNum;
 
     // Start is called before the first frame update
     void Start()
@@ -22,16 +22,19 @@ public class StoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int currentCandyCnt = GameObject.Find("CurrentCandy").transform.childCount;
-        if (currentCandyCnt == 0 && !storeActive)
-        {
-            transform.Find("StorePanel").gameObject.SetActive(true);
-            storeActive = true;
-        }
-        if (storeActive)
-        {
-            moneyText.text = "Money: " + money.ToString();
-            candyText.text = "Premium Candy: " + premCandyNum.ToString();
-        }
+
+    }
+
+    public void SetStoreActive()
+    {
+        transform.Find("StorePanel").gameObject.SetActive(true);
+        storeActive = true;
+    }
+
+    public void UpdateStoreUI()
+    {
+        premCandyNum = GameMetaInfo.Instance.PremiumCandy;
+        moneyText.text = "Money: " + money.ToString();
+        candyText.text = "Premium Candy: " + premCandyNum.ToString();
     }
 }

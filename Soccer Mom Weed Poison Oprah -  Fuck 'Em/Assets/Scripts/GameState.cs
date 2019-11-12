@@ -22,7 +22,7 @@ public class GameState : MonoBehaviour
     private bool waitingForRelease = false;
     private bool gameOver = false;
     private bool betweenLevels = true;
-    private bool levelFinished = false;
+    public static bool levelFinished = false;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +54,8 @@ public class GameState : MonoBehaviour
 
         if (waitingForRelease && FingerInput.GetFingerReleased())
         {
+            /*if ((betweenLevels && levelFinished) || gameOver)
+                ResetLevel();*/
             if ((betweenLevels && levelFinished) || gameOver)
                 ResetLevel();
             else if (betweenLevels)
@@ -111,12 +113,11 @@ public class GameState : MonoBehaviour
     {
         levelText.text = "Level Complete!\nTap to continue...";
         betweenLevels = true;
-        levelFinished = true;
-        GameMetaInfo.Instance.SwitchPlayer();
         Time.timeScale = 0f;
+        GameObject.Find("Canvas").transform.Find("StoreButton").gameObject.SetActive(true);
     }
 
-    private void ResetLevel()
+    public static void ResetLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

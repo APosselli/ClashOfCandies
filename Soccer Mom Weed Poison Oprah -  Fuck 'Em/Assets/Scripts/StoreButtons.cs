@@ -22,16 +22,16 @@ public class StoreButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        if (StoreScript.money > 0 && StoreScript.premCandyNum < 20)
+        if (StoreScript.money > 0 && GameMetaInfo.Instance.PremiumCandy < 20)
         {
             StoreScript.money -= candyCost;
-            StoreScript.premCandyNum++;
+            GameMetaInfo.Instance.PremiumCandy++;
         }
     }
 
     public void ContinueGame()
     {
-        StoreScript.storeActive = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameMetaInfo.Instance.SwitchPlayer();
+        GameState.ResetLevel();
     }
 }
