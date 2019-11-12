@@ -50,8 +50,8 @@ public class CandyGenerator : MonoBehaviour
         }
         GameObject initCurCandy = Instantiate(candyList[Random.Range(0, candyList.Count)], GameObject.Find("CurrentCandy").transform);
         initCurCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
-        //initCurCandy.transform.Find("highlight").gameObject.SetActive(true);
-        //initCurCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
+        initCurCandy.transform.Find("highlight").gameObject.SetActive(true);
+        initCurCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number;
         if (initCurCandy.tag == "good")
         {
             initCurCandy.GetComponent<SpriteRenderer>().material = replacematGood;
@@ -96,8 +96,8 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
         preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
-        //preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
-        //preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
+        preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
+        preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number;
         if (preNextCandy.tag == "good")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
@@ -127,8 +127,8 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
         preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
-        //preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
-        //preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
+        preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
+        preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number;
         if (preNextCandy.tag == "good")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
