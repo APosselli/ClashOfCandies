@@ -63,7 +63,7 @@ public class HandController : MonoBehaviour
             //premiumCandyCount--; //replace with calls to gamestate once added
             GameMetaInfo.Instance.PremiumCandy--;
             premiumCandyCount = GameMetaInfo.Instance.PremiumCandy;
+            GameObject.Find("PremiumCandy").transform.GetChild(premiumCandyCount).gameObject.SetActive(false);
         }
-
     }
 }

@@ -10,6 +10,7 @@ public class GameMetaInfo : MonoBehaviour
     private bool isPlayer1 = true;
     private string player1Name = "Player 1";
     private string player2Name = "Player 2";
+    public static int maxPremiumCandy = 7;
 
     void Awake()
     {

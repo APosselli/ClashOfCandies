@@ -18,6 +18,8 @@ public class PlayParticle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             mParticle.Play(true);
+            Transform childParticle = this.transform.GetChild(0);
+            Debug.Log(childParticle);
         }
     }
 }

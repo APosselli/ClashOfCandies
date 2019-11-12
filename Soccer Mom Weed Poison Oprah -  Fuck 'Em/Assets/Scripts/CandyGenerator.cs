@@ -8,6 +8,13 @@ public class CandyGenerator : MonoBehaviour
     public int levelCandyIncrease = 5;
     public List<GameObject> candyList;
     private Queue<GameObject> candyBag = new Queue<GameObject>();
+    private int premCandyNum;
+    public Color goodEdgeColor;
+    public Color badEdgeColor;
+    public float alphaThreshold = 0.1f;
+    public float offsetUV = 0.01f;
+    private Material replacematGood;
+    private Material replacematBad;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +26,15 @@ public class CandyGenerator : MonoBehaviour
         {
             number = GameMetaInfo.Instance.CandiesInLevel;
         }
+
+        replacematGood = new Material(Shader.Find("Custom/WithOutlineShader"));
+        replacematGood.SetFloat("_OffsetUV", offsetUV);
+        replacematGood.SetFloat("_AlphaThreshold", alphaThreshold);
+        replacematGood.SetColor("_EdgeColor", goodEdgeColor);
+        replacematBad = new Material(Shader.Find("Custom/WithOutlineShader"));
+        replacematBad.SetFloat("_OffsetUV", offsetUV);
+        replacematBad.SetFloat("_AlphaThreshold", alphaThreshold);
+        replacematBad.SetColor("_EdgeColor", badEdgeColor);
 
         for (int i = 0; i < number - 1; i++)
         {
@@ -33,20 +49,33 @@ public class CandyGenerator : MonoBehaviour
         }
         GameObject initCurCandy = Instantiate(candyList[Random.Range(0, candyList.Count)], GameObject.Find("CurrentCandy").transform);
         initCurCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
-        //initCurCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
+        //initCurCandy.transform.Find("highlight").gameObject.SetActive(true);
+        //initCurCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
         if (initCurCandy.tag == "good")
         {
+            initCurCandy.GetComponent<SpriteRenderer>().material = replacematGood;
             ParticleSystem goodEffect = initCurCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
             goodEffect.Play(true);
-            GameState.Instance.SetCurrentCandy(false);
-            
+            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (initCurCandy.tag == "bad")
         {
-            GameState.Instance.SetCurrentCandy(true);
+            initCurCandy.GetComponent<SpriteRenderer>().material = replacematBad;
+            ParticleSystem badEffect = initCurCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
+            badEffect.Play(true);
+            //GameState.Instance.SetCurrentCandy(true);
         }
         GameObject initNextCandy = Instantiate(candyBag.Dequeue(), GameObject.Find("NextCandy").transform);
         initNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
+
+        premCandyNum = GameMetaInfo.Instance.PremiumCandy;
+        for (int i = 0; i < GameMetaInfo.maxPremiumCandy; i++)
+        {
+            if (i > premCandyNum - 1)
+            {
+                GameObject.Find("PremiumCandy").transform.GetChild(i).gameObject.SetActive(false);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -66,15 +95,21 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
         preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
+        //preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
+        //preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
         if (preNextCandy.tag == "good")
         {
+            preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
             goodEffect.Play(true);
-            GameState.Instance.SetCurrentCandy(false);
+            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (preNextCandy.tag == "bad")
         {
-            GameState.Instance.SetCurrentCandy(true);
+            preNextCandy.GetComponent<SpriteRenderer>().material = replacematBad;
+            ParticleSystem badEffect = preNextCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
+            badEffect.Play(true);
+            //GameState.Instance.SetCurrentCandy(true);
         }
         GameObject newNextCandy = Instantiate(candyBag.Dequeue(), GameObject.Find("NextCandy").transform);
         newNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
@@ -91,15 +126,21 @@ public class CandyGenerator : MonoBehaviour
         preNextCandy.transform.localPosition = new Vector3(0f, 0f, 0f);
         preNextCandy.transform.localScale = new Vector3(0.2f, 0.2f, 2f);
         preNextCandy.GetComponent<SpriteRenderer>().sortingOrder = number;
+        //preNextCandy.transform.Find("highlight").gameObject.SetActive(true);
+        //preNextCandy.transform.Find("highlight").gameObject.GetComponent<SpriteRenderer>().sortingOrder = number - 1;
         if (preNextCandy.tag == "good")
         {
+            preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
             ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
             goodEffect.Play(true);
-            GameState.Instance.SetCurrentCandy(false);
+            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (preNextCandy.tag == "bad")
         {
-            GameState.Instance.SetCurrentCandy(true);
+            preNextCandy.GetComponent<SpriteRenderer>().material = replacematBad;
+            ParticleSystem badEffect = preNextCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
+            badEffect.Play(true);
+            //GameState.Instance.SetCurrentCandy(true);
         }
     }
 

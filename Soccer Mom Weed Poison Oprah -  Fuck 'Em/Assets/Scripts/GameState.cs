@@ -7,14 +7,14 @@ public class GameState : MonoBehaviour
 {
     public GameObject scoreTextObject;
     public GameObject livesTextObject;
-    public GameObject candyTextObject; // TODO: Remove when we add art assets
+   // public GameObject candyTextObject;
     public GameObject levelTextObject;
     public GameObject gameOverTextObject;
     private UnityEngine.UI.Text scoreText;
     private UnityEngine.UI.Text livesText;
     private UnityEngine.UI.Text levelText;
     private UnityEngine.UI.Text gameOverText;
-    private UnityEngine.UI.Text candyText;
+    // private UnityEngine.UI.Text candyText;
 
     private static GameState globalInstance;
     private int score = 0;
@@ -31,7 +31,7 @@ public class GameState : MonoBehaviour
         livesText = livesTextObject.GetComponent<UnityEngine.UI.Text>();
         levelText = levelTextObject.GetComponent<UnityEngine.UI.Text>();
         gameOverText = gameOverTextObject.GetComponent<UnityEngine.UI.Text>();
-        candyText = candyTextObject.GetComponent<UnityEngine.UI.Text>();
+        //candyText = candyTextObject.GetComponent<UnityEngine.UI.Text>();
 
         levelText.text = GameMetaInfo.Instance.PlayerName + "'s turn.\nTap to begin...";
         gameOverText.text = "";
@@ -90,13 +90,13 @@ public class GameState : MonoBehaviour
             InvokeGameOver();
     }
 
-    public void SetCurrentCandy(bool isPoison)
+    /*public void SetCurrentCandy(bool isPoison)
     {
         if (isPoison)
             candyText.text = "Candy: Poison";
         else
             candyText.text = "Candy: Edible";
-    }
+    }*/
 
     public void InvokeGameOver()
     {
