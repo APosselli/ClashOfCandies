@@ -7,20 +7,23 @@ public class GameState : MonoBehaviour
 {
     public GameObject scoreTextObject;
     public GameObject livesTextObject;
-   // public GameObject candyTextObject;
+   public GameObject slapTextObject;
     public GameObject levelTextObject;
     public GameObject gameOverTextObject;
+    public GameObject premCandyTextObject;
     public float rewardEndTime = 40f;
     public float candiesPerSecond = 0.5f;
     private UnityEngine.UI.Text scoreText;
     private UnityEngine.UI.Text livesText;
     private UnityEngine.UI.Text levelText;
     private UnityEngine.UI.Text gameOverText;
-    // private UnityEngine.UI.Text candyText;
+    private static UnityEngine.UI.Text slapText;
+    private static UnityEngine.UI.Text premCandyText;
 
     private static GameState globalInstance;
     private int score = 0;
     private int lives = 3;
+    public static int slaps;
     private float timeElapsed = 0f;
     private bool waitingForRelease = false;
     private bool gameOver = false;
@@ -30,11 +33,13 @@ public class GameState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        slaps = 3;
         scoreText = scoreTextObject.GetComponent<UnityEngine.UI.Text>();
         livesText = livesTextObject.GetComponent<UnityEngine.UI.Text>();
         levelText = levelTextObject.GetComponent<UnityEngine.UI.Text>();
         gameOverText = gameOverTextObject.GetComponent<UnityEngine.UI.Text>();
-        //candyText = candyTextObject.GetComponent<UnityEngine.UI.Text>();
+        slapText = slapTextObject.GetComponent<UnityEngine.UI.Text>();
+        premCandyText = premCandyTextObject.GetComponent<UnityEngine.UI.Text>();
 
         levelText.text = GameMetaInfo.Instance.PlayerName + "'s turn.\nTap to begin...";
         gameOverText.text = "";
@@ -43,6 +48,7 @@ public class GameState : MonoBehaviour
         Time.timeScale = 0f;
 
         scoreText.text = "Candies sorted: 0";
+        premCandyText.text = "x " + GameMetaInfo.Instance.PremiumCandy.ToString();
     }
 
     // Update is called once per frame
@@ -98,13 +104,17 @@ public class GameState : MonoBehaviour
             InvokeGameOver();
     }
 
-    /*public void SetCurrentCandy(bool isPoison)
+    public static void UpdatePremiumCandy()
     {
-        if (isPoison)
-            candyText.text = "Candy: Poison";
-        else
-            candyText.text = "Candy: Edible";
-    }*/
+        int premCandyNum = GameMetaInfo.Instance.PremiumCandy;
+        premCandyText.text = "x " + premCandyNum.ToString();
+    }
+
+    public static void UpdateSlap()
+    {
+        slaps--;
+        slapText.text = "Remaining Slaps: " + slaps.ToString();
+    }
 
     public void InvokeGameOver()
     {

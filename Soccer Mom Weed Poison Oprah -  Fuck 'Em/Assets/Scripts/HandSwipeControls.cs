@@ -68,6 +68,7 @@ public class HandSwipeControls : MonoBehaviour
                 handController.premiumCandy();
                 swiped = true;
             }
+            needsRelease = true;
         }
     }
 }

@@ -13,6 +13,8 @@ public class GameMetaInfo : MonoBehaviour
     private string player2Name = "Player 2";
     public static int maxPremiumCandy = 7;
 
+    public List<GameObject> badCandyList;
+
     void Awake()
     {
         if (metaInfoInstance == null)

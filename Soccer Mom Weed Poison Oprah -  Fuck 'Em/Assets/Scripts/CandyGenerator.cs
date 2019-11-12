@@ -8,7 +8,6 @@ public class CandyGenerator : MonoBehaviour
     public int levelCandyIncrease = 5;
     public List<GameObject> candyList;
     private Queue<GameObject> candyBag = new Queue<GameObject>();
-    private int premCandyNum;
     public Shader shader;
     public Color goodEdgeColor;
     public Color badEdgeColor;
@@ -68,15 +67,6 @@ public class CandyGenerator : MonoBehaviour
         }
         GameObject initNextCandy = Instantiate(candyBag.Dequeue(), GameObject.Find("NextCandy").transform);
         initNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
-
-        premCandyNum = GameMetaInfo.Instance.PremiumCandy;
-        for (int i = 0; i < GameMetaInfo.maxPremiumCandy; i++)
-        {
-            if (i > premCandyNum - 1)
-            {
-                GameObject.Find("PremiumCandy").transform.GetChild(i).gameObject.SetActive(false);
-            }
-        }
     }
 
     // Update is called once per frame

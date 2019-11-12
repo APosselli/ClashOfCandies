@@ -14,7 +14,7 @@ public class HandController : MonoBehaviour
     public const float m_timeToEnd = 10.0f;
     public const float m_TimeBeforeReach = 2;
     private float m_TimeElapsed;
-    private int premiumCandyCount = 1, slaps = 3;
+    private int premiumCandyCount = 1;
 
     private bool reaching = false;
     // Start is called before the first frame update
@@ -45,12 +45,13 @@ public class HandController : MonoBehaviour
 
     public void slap()
     {
-        if (m_TimeElapsed > m_TimeBeforeReach && slaps > 0)
+        if (m_TimeElapsed > m_TimeBeforeReach && GameState.slaps > 0)
         {
+            Debug.Log("slap");
             //m_TimeElapsed = m_TimeElapsed - m_timeToEnd / 10;
             transform.position = m_startingPosition;
             m_TimeElapsed = 0.0f; //resets to beginning of initial wait time
-            slaps--;
+            GameState.UpdateSlap();
         }
     }
 
@@ -63,7 +64,7 @@ public class HandController : MonoBehaviour
             //premiumCandyCount--; //replace with calls to gamestate once added
             GameMetaInfo.Instance.PremiumCandy--;
             premiumCandyCount = GameMetaInfo.Instance.PremiumCandy;
-            GameObject.Find("PremiumCandy").transform.GetChild(premiumCandyCount).gameObject.SetActive(false);
+            GameState.UpdatePremiumCandy();
         }
     }
 }
