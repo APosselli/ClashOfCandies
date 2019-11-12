@@ -10,6 +10,8 @@ public class GameState : MonoBehaviour
     public GameObject candyTextObject; // TODO: Remove when we add art assets
     public GameObject levelTextObject;
     public GameObject gameOverTextObject;
+    public float rewardEndTime = 40f;
+    public float candiesPerSecond = 0.5f;
     private UnityEngine.UI.Text scoreText;
     private UnityEngine.UI.Text livesText;
     private UnityEngine.UI.Text levelText;
@@ -19,6 +21,7 @@ public class GameState : MonoBehaviour
     private static GameState globalInstance;
     private int score = 0;
     private int lives = 3;
+    private float timeElapsed = 0f;
     private bool waitingForRelease = false;
     private bool gameOver = false;
     private bool betweenLevels = true;
@@ -38,11 +41,15 @@ public class GameState : MonoBehaviour
 
         globalInstance = this;
         Time.timeScale = 0f;
+
+        scoreText.text = "Candies sorted: 0";
     }
 
     // Update is called once per frame
     void Update()
     {
+        timeElapsed += Time.deltaTime;
+
         if (!gameOver && !betweenLevels)
             return;
 
@@ -61,6 +68,7 @@ public class GameState : MonoBehaviour
                 levelText.text = "";
                 waitingForRelease = false;
                 betweenLevels = false;
+                scoreText.text = "Candies sorted: " + score.ToString() + "/" + GameMetaInfo.Instance.CandiesInLevel;
                 Time.timeScale = 1f;
             }
         }
@@ -79,13 +87,13 @@ public class GameState : MonoBehaviour
             score = 999999999;
         }
 
-        scoreText.text = "Score: " + score.ToString();
+        scoreText.text = "Candies sorted: " + score.ToString() + "/" + GameMetaInfo.Instance.CandiesInLevel;
     }
 
     public void DecrementLives()
     {
         lives--;
-        livesText.text = "Non-fatal mistakes remaining: " + lives.ToString();
+        livesText.text = "Allowed Mistakes: " + lives.ToString();
         if (lives <= 0)
             InvokeGameOver();
     }
@@ -129,5 +137,14 @@ public class GameState : MonoBehaviour
     public bool GameOver
     {
         get { return gameOver; }
+    }
+
+    public int GetCandiesToAdd()
+    {
+        float timeRemaining = rewardEndTime - timeElapsed;
+        if (timeRemaining < 0)
+            timeRemaining = 0f;
+
+        return (int)(timeRemaining * candiesPerSecond);
     }
 }
