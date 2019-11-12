@@ -7,7 +7,8 @@ public class HandSwipeControls : MonoBehaviour
     // Start is called before the first frame update
     private float minSwipeDistance;
     private Camera cam;
-    // public bool pressed = false, justTriggeredSwipeEffect = false;
+    //public bool pressed = false;
+    private bool needsRelease = false;
     private bool swiped = false;
     public Vector3 handPos, fingerPos, touchPos;
     private GameObject hand;
@@ -23,42 +24,47 @@ public class HandSwipeControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (!FingerInput.GetFingerDown())
-         {
-             pressed = true;
-         }*/
+
+        /*if (FingerInput.GetFingerPressed())
+        {
+            pressed = true;
+        }*/
 
         if (!FingerInput.GetInputPresent() || !FingerInput.GetFingerDown())
         {
             swiped = false;
+            needsRelease = false;
+            return;
         }
 
-            if (FingerInput.GetFingerDown())
+        if (needsRelease)
+            return;
+
+        fingerPos = FingerInput.GetFingerPosition();
+
+        /*if (FingerInput.GetFingerDown())
         {
             fingerPos = FingerInput.GetFingerPosition();
-            Debug.Log("finger"+fingerPos);
-        }
+        }*/
 
         if (FingerInput.GetFingerPressed())
         {
             touchPos = fingerPos;
         }
 
+        //if (Mathf.Abs(touchPos.y - fingerPos.y) >= minSwipeDistance && pressed)
         if (Mathf.Abs(touchPos.y - fingerPos.y) >= minSwipeDistance && !swiped)
-        //if(Mathf.Abs(touchPos.y - fingerPos.y) >= minSwipeDistance && pressed)
         {
             //pressed = false;
-            if(touchPos.y - fingerPos.y < 0)
-            //if (touchPos.y >= Screen.height / 2)
-             {
-                Debug.Log("up touch"+touchPos);
+            //if(touchPos.y >= Screen.height / 2)
+            if (touchPos.y - fingerPos.y < 0)
+            {
                 handController.slap();
                 swiped = true;
             }
-            else if (touchPos.y - fingerPos.y > 0)
             //else if(touchPos.y < Screen.height / 2)
+            else
             {
-                Debug.Log("down touch" + touchPos);
                 handController.premiumCandy();
                 swiped = true;
             }
