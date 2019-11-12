@@ -47,7 +47,6 @@ public class HandController : MonoBehaviour
     {
         if (m_TimeElapsed > m_TimeBeforeReach && GameState.slaps > 0)
         {
-            Debug.Log("slap");
             //m_TimeElapsed = m_TimeElapsed - m_timeToEnd / 10;
             transform.position = m_startingPosition;
             m_TimeElapsed = 0.0f; //resets to beginning of initial wait time

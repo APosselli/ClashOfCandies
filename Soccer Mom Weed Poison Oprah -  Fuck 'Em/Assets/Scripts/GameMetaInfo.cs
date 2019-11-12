@@ -11,9 +11,8 @@ public class GameMetaInfo : MonoBehaviour
     private bool isPlayer1 = true;
     private string player1Name = "Player 1";
     private string player2Name = "Player 2";
-    public static int maxPremiumCandy = 7;
-
-    public List<GameObject> badCandyList;
+    public List<GameObject> prefabList;
+    public static List<GameObject> candyList = new List<GameObject>();
 
     void Awake()
     {
@@ -31,7 +30,10 @@ public class GameMetaInfo : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+        foreach (GameObject prefab in prefabList)
+        {
+            candyList.Add(prefab);
+        }
     }
 
     // Update is called once per frame
