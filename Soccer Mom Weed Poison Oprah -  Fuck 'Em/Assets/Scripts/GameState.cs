@@ -54,8 +54,6 @@ public class GameState : MonoBehaviour
 
         if (waitingForRelease && FingerInput.GetFingerReleased())
         {
-            /*if ((betweenLevels && levelFinished) || gameOver)
-                ResetLevel();*/
             if ((betweenLevels && levelFinished) || gameOver)
                 ResetLevel();
             else if (betweenLevels)
@@ -111,10 +109,11 @@ public class GameState : MonoBehaviour
 
     public void CompleteLevel()
     {
-        levelText.text = "Level Complete!\nTap to continue...";
-        betweenLevels = true;
+        levelText.text = "Level Complete!";
         Time.timeScale = 0f;
         GameObject.Find("Canvas").transform.Find("StoreButton").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("FacebookLoginButton").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("FacebookShareButton").gameObject.SetActive(true);
     }
 
     public static void ResetLevel()

@@ -22,19 +22,17 @@ public class StoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (storeActive)
+        {
+            premCandyNum = GameMetaInfo.Instance.PremiumCandy;
+            moneyText.text = "Money: " + money.ToString();
+            candyText.text = "Premium Candy: " + premCandyNum.ToString();
+        }
     }
 
     public void SetStoreActive()
     {
-        transform.Find("StorePanel").gameObject.SetActive(true);
         storeActive = true;
-    }
-
-    public void UpdateStoreUI()
-    {
-        premCandyNum = GameMetaInfo.Instance.PremiumCandy;
-        moneyText.text = "Money: " + money.ToString();
-        candyText.text = "Premium Candy: " + premCandyNum.ToString();
+        transform.Find("StorePanel").gameObject.SetActive(true);
     }
 }

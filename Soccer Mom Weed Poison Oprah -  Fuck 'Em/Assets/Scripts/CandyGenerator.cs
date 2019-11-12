@@ -107,7 +107,7 @@ public class CandyGenerator : MonoBehaviour
     {
         GameObject currentCandy = GameObject.Find("CurrentCandy").transform.GetChild(0).gameObject;
         Destroy(currentCandy);
-        GameMetaInfo.Instance.CandiesInLevel += levelCandyIncrease;
         GameState.Instance.CompleteLevel();
+        GameMetaInfo.Instance.CandiesInLevel += levelCandyIncrease;
     }
 }
