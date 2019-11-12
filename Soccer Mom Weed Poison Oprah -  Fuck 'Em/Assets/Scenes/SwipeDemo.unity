@@ -644,8 +644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 150}
+  m_AnchoredPosition: {x: 1.275, y: -0.77502}
+  m_SizeDelta: {x: 649.72, y: 273.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754281969
 MonoBehaviour:
@@ -678,9 +678,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Level Complete!
+  m_Text: 'Level
 
-'
+    Complete!'
 --- !u!222 &754281970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2059,9 +2059,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Game Over
 
-    Tap to retry...
-
-'
+    Tap to retry...'
 --- !u!222 &1890939798
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2086,8 +2084,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 150}
+  m_AnchoredPosition: {x: 2.575, y: -0.17499}
+  m_SizeDelta: {x: 651.02, y: 274.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2042719334
 GameObject:
