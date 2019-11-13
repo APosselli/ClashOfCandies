@@ -22,9 +22,9 @@ public class StoreButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        if (StoreScript.money > candyCost)
+        if (GameMetaInfo.Instance.Money > candyCost)
         {
-            StoreScript.money -= candyCost;
+            GameMetaInfo.Instance.Money -= candyCost;
             GameMetaInfo.Instance.PremiumCandy++;
         }
     }

@@ -8,8 +8,7 @@ public class StoreScript : MonoBehaviour
     private UnityEngine.UI.Text moneyText;
     private UnityEngine.UI.Text candyText;
 
-    // TODO: replace with gamestate variable after merging with Anothoy's work
-    public static int money = 999;
+    private int money;
     private int premCandyNum;
 
     // Start is called before the first frame update
@@ -25,6 +24,7 @@ public class StoreScript : MonoBehaviour
         if (storeActive)
         {
             premCandyNum = GameMetaInfo.Instance.PremiumCandy;
+            money = GameMetaInfo.Instance.Money;
             moneyText.text = "Money: " + money.ToString();
             candyText.text = "Premium Candy: " + premCandyNum.ToString();
         }

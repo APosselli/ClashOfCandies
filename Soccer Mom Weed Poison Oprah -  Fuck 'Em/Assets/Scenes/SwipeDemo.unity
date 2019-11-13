@@ -2006,8 +2006,8 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: c5d0645e62bd13c4897c9c9c99a5f196, type: 3}
   goodEdgeColor: {r: 0.29761484, g: 0.8301887, b: 0.42359588, a: 0.62352943}
   badEdgeColor: {r: 0.6234977, g: 0.25898898, b: 0.9150943, a: 0.7490196}
-  alphaThreshold: 0.1
-  offsetUV: 0.01
+  alphaThreshold: 0.001
+  offsetUV: 0.00004
 --- !u!4 &1653918443
 Transform:
   m_ObjectHideFlags: 0

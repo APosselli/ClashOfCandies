@@ -13,6 +13,9 @@ public class GameMetaInfo : MonoBehaviour
     private string player2Name = "Player 2";
     public List<GameObject> prefabList;
     public static List<GameObject> candyList = new List<GameObject>();
+    private int player1Money = 999;
+    private int player2Money = 999;
+
 
     void Awake()
     {
@@ -98,6 +101,25 @@ public class GameMetaInfo : MonoBehaviour
         player2Name = name;
     }
 
+    public int Money
+    {
+        get
+        {
+            if (isPlayer1)
+                return player1Money;
+            else
+                return player2Money;
+        }
+
+        set
+        {
+            if (isPlayer1)
+                player1Money = value;
+            else
+                player2Money = value;
+        }
+    }
+
     public void SwitchPlayer()
     {
         isPlayer1 = !isPlayer1;
@@ -115,6 +137,6 @@ public class GameMetaInfo : MonoBehaviour
 
     public static void StartGame()
     {
-        SceneManager.LoadScene("SwipeDemo");
+        SceneManager.LoadScene("NewsScene");
     }
 }
