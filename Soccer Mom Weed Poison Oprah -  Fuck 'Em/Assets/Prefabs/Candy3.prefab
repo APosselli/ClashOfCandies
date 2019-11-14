@@ -235,12 +235,12 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1130693516030239426, guid: abcdb18bb130c534fb63da5ffb960caa,
+    - target: {fileID: 1130693517605109749, guid: abcdb18bb130c534fb63da5ffb960caa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1130693517605109749, guid: abcdb18bb130c534fb63da5ffb960caa,
+    - target: {fileID: 1130693516030239426, guid: abcdb18bb130c534fb63da5ffb960caa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -320,21 +320,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 882964803159595534, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 882964803159595532, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
-        type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 882964803159595532, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
-        type: 3}
-      propertyPath: autoRandomSeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 882964803159595533, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
         type: 3}
       propertyPath: m_Enabled
@@ -355,12 +340,27 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 882964803067635723, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+    - target: {fileID: 882964803159595532, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 882964803159595532, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+        type: 3}
+      propertyPath: autoRandomSeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 882964803159595534, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 882964803175667351, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882964803067635723, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
         type: 3}
       propertyPath: playOnAwake
       value: 0

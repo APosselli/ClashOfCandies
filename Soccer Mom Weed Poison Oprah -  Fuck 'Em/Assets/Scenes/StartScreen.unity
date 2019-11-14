@@ -365,6 +365,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50388ceba188e804180720e61150d839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabList:
+  - {fileID: 8087611702502329121, guid: a2797e53e8e4ac940af4d2fa097534c5, type: 3}
+  - {fileID: 378871260129163848, guid: 687139b2c68a026468473b8da9a2cf6e, type: 3}
+  - {fileID: 5698389666394340566, guid: 4894dbf13c8d6254b9f752a53b6bf25b, type: 3}
+  - {fileID: 6115917246812005965, guid: f3bc3adef05bc6d499e95c336c7188aa, type: 3}
+  - {fileID: 5547318676248187072, guid: f65f244f90d388d489ffa81d4d5309e5, type: 3}
+  - {fileID: 1841642854525458035, guid: 1be43152cc6dda04fadcbd3d949673b6, type: 3}
+  - {fileID: 3053618632722074557, guid: b5b7a6ae047bd6840b8565decc16f2c2, type: 3}
+  - {fileID: 2407451730769470140, guid: eff8ccaf014da984295bdb67acf6e549, type: 3}
+  - {fileID: 2963021149009281905, guid: f35d81677950f964697bb06b7451004d, type: 3}
+  - {fileID: 1012461182161244631, guid: 9d31bba413f9f3d4181a46eaa306c403, type: 3}
 --- !u!4 &200980123
 Transform:
   m_ObjectHideFlags: 0

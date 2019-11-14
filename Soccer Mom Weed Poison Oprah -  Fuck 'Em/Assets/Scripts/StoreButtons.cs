@@ -11,7 +11,11 @@ public class StoreButtons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (GameState.Instance.GameOver)
+        {
+            UnityEngine.UI.Text continueText = transform.Find("ContinueButton/Text").GetComponent<UnityEngine.UI.Text>();
+            continueText.text = "Retry";
+        }
     }
 
     // Update is called once per frame
@@ -22,9 +26,9 @@ public class StoreButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        if (StoreScript.money > 0 && GameMetaInfo.Instance.PremiumCandy < GameMetaInfo.maxPremiumCandy)
+        if (GameMetaInfo.Instance.Money > candyCost)
         {
-            StoreScript.money -= candyCost;
+            GameMetaInfo.Instance.Money -= candyCost;
             GameMetaInfo.Instance.PremiumCandy++;
         }
     }
@@ -32,7 +36,13 @@ public class StoreButtons : MonoBehaviour
     public void ContinueGame()
     {
         StoreScript.storeActive = false;
+        if (GameState.Instance.GameOver)
+        {
+            GameState.Instance.GameOver = false;
+            SceneManager.LoadScene("SwipeDemo");
+            return;
+        }
         GameMetaInfo.Instance.SwitchPlayer();
-        GameState.ResetLevel();
+        SceneManager.LoadScene("NewsScene");
     }
 }

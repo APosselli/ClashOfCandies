@@ -11,7 +11,11 @@ public class GameMetaInfo : MonoBehaviour
     private bool isPlayer1 = true;
     private string player1Name = "Player 1";
     private string player2Name = "Player 2";
-    public static int maxPremiumCandy = 7;
+    public List<GameObject> prefabList;
+    public static List<GameObject> candyList = new List<GameObject>();
+    private int player1Money = 999;
+    private int player2Money = 999;
+
 
     void Awake()
     {
@@ -29,7 +33,10 @@ public class GameMetaInfo : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+        foreach (GameObject prefab in prefabList)
+        {
+            candyList.Add(prefab);
+        }
     }
 
     // Update is called once per frame
@@ -94,6 +101,25 @@ public class GameMetaInfo : MonoBehaviour
         player2Name = name;
     }
 
+    public int Money
+    {
+        get
+        {
+            if (isPlayer1)
+                return player1Money;
+            else
+                return player2Money;
+        }
+
+        set
+        {
+            if (isPlayer1)
+                player1Money = value;
+            else
+                player2Money = value;
+        }
+    }
+
     public void SwitchPlayer()
     {
         isPlayer1 = !isPlayer1;
@@ -111,6 +137,6 @@ public class GameMetaInfo : MonoBehaviour
 
     public static void StartGame()
     {
-        SceneManager.LoadScene("SwipeDemo");
+        SceneManager.LoadScene("NewsScene");
     }
 }
