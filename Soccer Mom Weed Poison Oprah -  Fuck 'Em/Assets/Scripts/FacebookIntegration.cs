@@ -104,7 +104,7 @@ public class FacebookIntegration : MonoBehaviour
 
     public void ShareLinkFacebook()
     {
-        FB.ShareLink(new System.Uri("https://developers.facebook.com/"), callback: ShareCallback);
+        FB.ShareLink(new System.Uri("https://github.com/APosselli/ClashOfCandies"),"Play Clash of Candies with me!", "Will " + GameMetaInfo.Instance.PlayerName + " beat " + GameMetaInfo.Instance.OtherPlayerName + "???",new System.Uri("https://trello-attachments.s3.amazonaws.com/5dc1c28deba962099b1ab27a/600x613/ec1ba979baf1bbd7f30784a416d477e3/power_candy.png"),callback: ShareCallback);
     }
 
     public void LogOutFacebook()
@@ -114,8 +114,7 @@ public class FacebookIntegration : MonoBehaviour
 
     public void FacebookGameRequest()
     {
-        FB.AppRequest("Do you think you're as good of a parent as I am?");
+        FB.AppRequest("Play Clash of Candies with me!");
     }
-
 
 }

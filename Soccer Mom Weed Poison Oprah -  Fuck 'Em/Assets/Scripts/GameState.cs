@@ -141,6 +141,7 @@ public class GameState : MonoBehaviour
         GameObject.Find("Canvas").transform.Find("StoreButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("FacebookLoginButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("FacebookShareButton").gameObject.SetActive(true);
+        GameObject.Find("Canvas").transform.Find("FacebookInviteButton").gameObject.SetActive(true);
     }
 
     public static void ResetLevel()
