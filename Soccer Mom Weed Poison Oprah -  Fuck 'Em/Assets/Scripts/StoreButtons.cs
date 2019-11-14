@@ -59,5 +59,35 @@ public class StoreButtons : MonoBehaviour
     public void GoBackToStore()
     {
         transform.Find("RemindPanel").gameObject.SetActive(false);
+        transform.Find("PurchasePanel").gameObject.SetActive(false);
+    }
+
+    public void SelectPack1()
+    {
+        transform.Find("RemindPanel2").gameObject.SetActive(true);
+        transform.Find("PurchasePanel").gameObject.SetActive(false);
+    }
+
+    public void SelectPack2()
+    {
+        transform.Find("RemindPanel3").gameObject.SetActive(true);
+        transform.Find("PurchasePanel").gameObject.SetActive(false);
+    }
+
+    public void BuyPack1()
+    {
+        GameMetaInfo.Instance.Money += 500;
+    }
+
+    public void BuyPack2()
+    {
+        GameMetaInfo.Instance.Money += 3500;
+    }
+
+    public void BackToPurchase()
+    {
+        transform.Find("PurchasePanel").gameObject.SetActive(true);
+        transform.Find("RemindPanel2").gameObject.SetActive(false);
+        transform.Find("RemindPanel3").gameObject.SetActive(false);
     }
 }
