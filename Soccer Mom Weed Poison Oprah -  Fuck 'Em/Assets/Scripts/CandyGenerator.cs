@@ -53,16 +53,10 @@ public class CandyGenerator : MonoBehaviour
         if (initCurCandy.tag == "good")
         {
             initCurCandy.GetComponent<SpriteRenderer>().material = replacematGood;
-            ParticleSystem goodEffect = initCurCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            goodEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (initCurCandy.tag == "bad")
         {
             initCurCandy.GetComponent<SpriteRenderer>().material = replacematBad;
-            ParticleSystem badEffect = initCurCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
-            badEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(true);
         }
         GameObject initNextCandy = Instantiate(candyBag.Dequeue(), GameObject.Find("NextCandy").transform);
         initNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
@@ -90,16 +84,10 @@ public class CandyGenerator : MonoBehaviour
         if (preNextCandy.tag == "good")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
-            ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            goodEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (preNextCandy.tag == "bad")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematBad;
-            ParticleSystem badEffect = preNextCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
-            badEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(true);
         }
         GameObject newNextCandy = Instantiate(candyBag.Dequeue(), GameObject.Find("NextCandy").transform);
         newNextCandy.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
@@ -121,16 +109,10 @@ public class CandyGenerator : MonoBehaviour
         if (preNextCandy.tag == "good")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematGood;
-            ParticleSystem goodEffect = preNextCandy.transform.GetChild(0).GetComponent<ParticleSystem>();
-            goodEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(false);
         }
         else if (preNextCandy.tag == "bad")
         {
             preNextCandy.GetComponent<SpriteRenderer>().material = replacematBad;
-            ParticleSystem badEffect = preNextCandy.transform.GetChild(1).GetComponent<ParticleSystem>();
-            badEffect.Play(true);
-            //GameState.Instance.SetCurrentCandy(true);
         }
     }
 

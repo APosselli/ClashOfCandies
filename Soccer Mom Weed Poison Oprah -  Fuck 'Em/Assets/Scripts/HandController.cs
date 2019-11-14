@@ -38,7 +38,7 @@ public class HandController : MonoBehaviour
         }
         else
         {
-            Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), 0);
+            Vector3 newPos = new Vector3(0, m_startingPosition.y - (m_yDiff * m_percentTravelled), -1);
             transform.position = newPos;
         }
     }
