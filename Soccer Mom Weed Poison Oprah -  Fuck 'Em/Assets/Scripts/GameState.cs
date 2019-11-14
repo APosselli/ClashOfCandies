@@ -76,6 +76,8 @@ public class GameState : MonoBehaviour
                 betweenLevels = false;
                 scoreText.text = "Candies sorted: " + score.ToString() + "/" + GameMetaInfo.Instance.CandiesInLevel;
                 Time.timeScale = 1f;
+                AudioManager.menu.Stop();
+                AudioManager.gameplay.Play();
             }
         }
     }
@@ -120,16 +122,22 @@ public class GameState : MonoBehaviour
     {
         gameOver = true;
         Time.timeScale = 0f;
+        AudioManager.gameplay.Stop();
+        AudioManager.gameOver.Play();
+        AudioManager.menu.Play();
         gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
         GameObject.Find("Canvas").transform.Find("RetryButton").gameObject.SetActive(true);
-        GameMetaInfo.Instance.CandiesInLevel = 0;
-        GameMetaInfo.Instance.SetPlayer1();
+        //GameMetaInfo.Instance.CandiesInLevel = 0;
+        //GameMetaInfo.Instance.SetPlayer1();
     }
 
     public void CompleteLevel()
     {
         levelText.text = "Level Complete!";
         Time.timeScale = 0f;
+        AudioManager.gameplay.Stop();
+        AudioManager.levelFinish.Play();
+        AudioManager.menu.Play();
         GameObject.Find("Canvas").transform.Find("StoreButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("FacebookLoginButton").gameObject.SetActive(true);
         GameObject.Find("Canvas").transform.Find("FacebookShareButton").gameObject.SetActive(true);

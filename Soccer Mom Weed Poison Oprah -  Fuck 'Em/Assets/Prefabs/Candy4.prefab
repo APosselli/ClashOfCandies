@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 749745243302268659}
   m_Layer: 0
   m_Name: Candy4
-  m_TagString: bad
+  m_TagString: good
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

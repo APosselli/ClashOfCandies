@@ -33,12 +33,16 @@ public class StoreScript : MonoBehaviour
     public void SetStoreActive()
     {
         storeActive = true;
+        AudioManager.menu.Stop();
+        AudioManager.store.Play();
         transform.Find("StorePanel").gameObject.SetActive(true);
     }
 
     public void SetStoreDeactive()
     {
         storeActive = false;
+        AudioManager.store.Stop();
+        AudioManager.menu.Play();
         transform.Find("StorePanel").gameObject.SetActive(false);
     }
 }

@@ -28,10 +28,12 @@ public class StoreButtons : MonoBehaviour
     {
         if (GameMetaInfo.Instance.Money < candyCost)
         {
+            AudioManager.UI.Play();
             transform.Find("RemindPanel").gameObject.SetActive(true);
         }
         else if (GameMetaInfo.Instance.Money >= candyCost)
         {
+            AudioManager.purchase.Play();
             GameMetaInfo.Instance.Money -= candyCost;
             GameMetaInfo.Instance.PremiumCandy++;
         }
@@ -43,9 +45,13 @@ public class StoreButtons : MonoBehaviour
         if (GameState.Instance.GameOver)
         {
             GameState.Instance.GameOver = false;
+            AudioManager.store.Stop();
+            AudioManager.menu.Play();
             SceneManager.LoadScene("NewsScene");
             return;
         }
+        AudioManager.store.Stop();
+        AudioManager.menu.Play();
         GameMetaInfo.Instance.SwitchPlayer();
         SceneManager.LoadScene("Selection");
     }
@@ -89,5 +95,15 @@ public class StoreButtons : MonoBehaviour
         transform.Find("PurchasePanel").gameObject.SetActive(true);
         transform.Find("RemindPanel2").gameObject.SetActive(false);
         transform.Find("RemindPanel3").gameObject.SetActive(false);
+    }
+
+    public void PlayPurchase()
+    {
+        AudioManager.purchase.Play();
+    }
+
+    public void PlayUI()
+    {
+        AudioManager.UI.Play();
     }
 }

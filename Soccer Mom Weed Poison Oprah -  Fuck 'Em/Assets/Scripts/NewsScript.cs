@@ -9,7 +9,6 @@ public class NewsScript : MonoBehaviour
     public GameObject startButton;
     public GameObject news1;
     public GameObject news2;
-    private bool newsDisplayed = false;
     private List<GameObject> badCandyList = new List<GameObject>();
     // Start is called before the first frame update
     void Start()

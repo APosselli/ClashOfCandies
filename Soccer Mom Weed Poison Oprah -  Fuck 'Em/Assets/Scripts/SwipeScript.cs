@@ -78,12 +78,14 @@ public class SwipeScript : MonoBehaviour
                 {
                     // The user correctly disposed of a bad candy
                     badEffect.Play(true);
+                    AudioManager.goodSwipe.Play();
                     GameState.Instance.AddToScore(1);
                 }
                 else if (candyChild.tag == "good")
                 {
                     // The user incorrectly disposed of a good candy
                     goodEffect.Play(true);
+                    AudioManager.badSwipe.Play();
                     GameState.Instance.DecrementLives();
                 }
 
@@ -105,6 +107,7 @@ public class SwipeScript : MonoBehaviour
 
                 // The user correctly saved a good candy
                 goodEffect.Play(true);
+                AudioManager.goodSwipe.Play();
                 GameState.Instance.AddToScore(1);
             }
 

@@ -42,7 +42,7 @@ public class GameMetaInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     static public GameMetaInfo Instance

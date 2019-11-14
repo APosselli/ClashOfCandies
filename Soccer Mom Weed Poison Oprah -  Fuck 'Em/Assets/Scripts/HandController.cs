@@ -47,6 +47,7 @@ public class HandController : MonoBehaviour
     {
         if (m_TimeElapsed > m_TimeBeforeReach && GameState.slaps > 0)
         {
+            AudioManager.slap.Play();
             //m_TimeElapsed = m_TimeElapsed - m_timeToEnd / 10;
             transform.position = m_startingPosition;
             m_TimeElapsed = 0.0f; //resets to beginning of initial wait time
@@ -58,6 +59,7 @@ public class HandController : MonoBehaviour
     {
         if(premiumCandyCount > 0)
         {
+            AudioManager.premCandy.Play();
             transform.position = m_startingPosition;
             m_TimeElapsed = 0 - m_TimeBeforeReach; //resets to beginning of initial wait time * 2;
             //premiumCandyCount--; //replace with calls to gamestate once added
