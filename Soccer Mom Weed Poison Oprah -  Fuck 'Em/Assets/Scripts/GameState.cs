@@ -67,9 +67,9 @@ public class GameState : MonoBehaviour
 
         if (waitingForRelease && FingerInput.GetFingerReleased())
         {
-            if ((betweenLevels && levelFinished) || gameOver)
-                ResetLevel();
-            else if (betweenLevels)
+            /*if ((betweenLevels && levelFinished) || gameOver)
+                ResetLevel();*/
+            if (betweenLevels)
             {
                 levelText.text = "";
                 waitingForRelease = false;
@@ -119,10 +119,11 @@ public class GameState : MonoBehaviour
     public void InvokeGameOver()
     {
         gameOver = true;
-        gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
-        GameMetaInfo.Instance.CandiesInLevel = 0;
-        GameMetaInfo.Instance.SetPlayer1();
         Time.timeScale = 0f;
+        gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
+        GameObject.Find("Canvas").transform.Find("RetryButton").gameObject.SetActive(true);
+        //GameMetaInfo.Instance.CandiesInLevel = 0;
+        //GameMetaInfo.Instance.SetPlayer1();
     }
 
     public void CompleteLevel()
@@ -147,6 +148,7 @@ public class GameState : MonoBehaviour
     public bool GameOver
     {
         get { return gameOver; }
+        set { gameOver = value; }
     }
 
     public int GetCandiesToAdd()

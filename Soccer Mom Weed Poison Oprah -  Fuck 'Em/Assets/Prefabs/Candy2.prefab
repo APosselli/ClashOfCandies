@@ -235,12 +235,12 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1130693516030239426, guid: abcdb18bb130c534fb63da5ffb960caa,
+    - target: {fileID: 1130693517605109749, guid: abcdb18bb130c534fb63da5ffb960caa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1130693517605109749, guid: abcdb18bb130c534fb63da5ffb960caa,
+    - target: {fileID: 1130693516030239426, guid: abcdb18bb130c534fb63da5ffb960caa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -325,12 +325,12 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 882964803067635723, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+    - target: {fileID: 882964803175667351, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 882964803175667351, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
+    - target: {fileID: 882964803067635723, guid: 5eb67ca67d22ab0458db5b7fe864b4aa,
         type: 3}
       propertyPath: playOnAwake
       value: 0
