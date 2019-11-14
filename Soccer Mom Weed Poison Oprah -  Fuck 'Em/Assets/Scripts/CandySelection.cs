@@ -28,7 +28,7 @@ public class CandySelection : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-        messageBox.text = message1;
+        //messageBox.text = message1;
 
         candyInstances = new List<GameObject>();
         badCandies = new List<GameObject>();
@@ -54,11 +54,12 @@ public class CandySelection : MonoBehaviour
     void Update()
     {
         timeElapsed += Time.deltaTime;
-        if (timeElapsed > message1Duration && timeElapsed <= message1Duration + message2Duration)
+        /*if (timeElapsed > message1Duration && timeElapsed <= message1Duration + message2Duration)
         {
             messageBox.text = message2;
         }
-        else if (timeElapsed > message1Duration + message2Duration)
+        else*/
+        if (timeElapsed > message1Duration + message2Duration)
         {
             canvas.enabled = false;
         }
