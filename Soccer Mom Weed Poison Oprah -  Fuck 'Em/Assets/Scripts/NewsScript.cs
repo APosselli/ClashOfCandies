@@ -14,13 +14,14 @@ public class NewsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameMetaInfo.Instance.CandiesInLevel == 0)
+        /* for (int i = 0; i < 9; i++)
         {
-            newsBoard.SetActive(false);
-            news1.SetActive(false);
-            news2.SetActive(false);
-        }
-        startButton.SetActive(false);
+            int good = Random.Range(0, 2);
+            if (good == 0)
+                GameMetaInfo.candyList[i].tag = "good";
+            else
+                GameMetaInfo.candyList[i].tag = "bad";
+        }*/
     }
 
     // Update is called once per frame
@@ -29,21 +30,9 @@ public class NewsScript : MonoBehaviour
         if ((Input.GetMouseButtonDown(0) || Input.touchCount > 0) && !newsDisplayed)
         {
             newsDisplayed = true;
-            if (GameMetaInfo.Instance.CandiesInLevel == 0)
-            {
-                newsBoard.SetActive(true);
-                news1.SetActive(true);
-                news2.SetActive(true);
-                Debug.Log("random candies");
-                for (int i = 0; i < 9; i++)
-                {
-                    int good = Random.Range(0, 2);
-                    if (good == 0)
-                        GameMetaInfo.candyList[i].tag = "good";
-                    else
-                        GameMetaInfo.candyList[i].tag = "bad";
-                }
-            }
+            newsBoard.SetActive(true);
+            news1.SetActive(true);
+            news2.SetActive(true);
             startButton.SetActive(true);
             foreach (GameObject candy in GameMetaInfo.candyList)
             {
