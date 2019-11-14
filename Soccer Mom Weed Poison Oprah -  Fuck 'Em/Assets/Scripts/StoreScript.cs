@@ -25,7 +25,7 @@ public class StoreScript : MonoBehaviour
         {
             premCandyNum = GameMetaInfo.Instance.PremiumCandy;
             money = GameMetaInfo.Instance.Money;
-            moneyText.text = "Money: " + money.ToString();
+            moneyText.text = "Coins: " + money.ToString();
             candyText.text = "Premium Candy: " + premCandyNum.ToString();
         }
     }

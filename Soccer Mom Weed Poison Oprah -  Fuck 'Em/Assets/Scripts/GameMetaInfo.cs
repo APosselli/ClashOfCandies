@@ -13,8 +13,8 @@ public class GameMetaInfo : MonoBehaviour
     private string player2Name = "Player 2";
     public List<GameObject> prefabList;
     public static List<GameObject> candyList = new List<GameObject>();
-    private int player1Money = 999;
-    private int player2Money = 999;
+    private int player1Money = 0;
+    private int player2Money = 0;
 
 
     void Awake()
