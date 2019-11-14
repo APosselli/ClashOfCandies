@@ -5,7 +5,6 @@ using UnityEngine;
 public class CandyGenerator : MonoBehaviour
 {
     public int number = 20;
-    public int levelCandyIncrease = 5;
     private Queue<GameObject> candyBag = new Queue<GameObject>();
     public Shader shader;
     public Color goodEdgeColor;

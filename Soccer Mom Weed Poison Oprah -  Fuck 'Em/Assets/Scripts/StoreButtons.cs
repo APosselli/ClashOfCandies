@@ -39,10 +39,10 @@ public class StoreButtons : MonoBehaviour
         if (GameState.Instance.GameOver)
         {
             GameState.Instance.GameOver = false;
-            SceneManager.LoadScene("SwipeDemo");
+            SceneManager.LoadScene("NewsScene");
             return;
         }
         GameMetaInfo.Instance.SwitchPlayer();
-        SceneManager.LoadScene("NewsScene");
+        SceneManager.LoadScene("Selection");
     }
 }

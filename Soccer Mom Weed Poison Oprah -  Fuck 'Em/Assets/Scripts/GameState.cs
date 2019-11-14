@@ -122,8 +122,8 @@ public class GameState : MonoBehaviour
         Time.timeScale = 0f;
         gameOverText.text = "Game Over!\n" + GameMetaInfo.Instance.OtherPlayerName + " Wins!";
         GameObject.Find("Canvas").transform.Find("RetryButton").gameObject.SetActive(true);
-        //GameMetaInfo.Instance.CandiesInLevel = 0;
-        //GameMetaInfo.Instance.SetPlayer1();
+        GameMetaInfo.Instance.CandiesInLevel = 0;
+        GameMetaInfo.Instance.SetPlayer1();
     }
 
     public void CompleteLevel()
