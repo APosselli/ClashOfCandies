@@ -138,6 +138,6 @@ public class GameMetaInfo : MonoBehaviour
     public static void StartGame()
     {
         Instance.isPlayer1 = true;
-        SceneManager.LoadScene("NewsScene");
+        SceneManager.LoadScene("Selection");
     }
 }

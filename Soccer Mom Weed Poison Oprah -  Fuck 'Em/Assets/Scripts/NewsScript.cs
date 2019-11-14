@@ -14,14 +14,7 @@ public class NewsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /* for (int i = 0; i < 9; i++)
-        {
-            int good = Random.Range(0, 2);
-            if (good == 0)
-                GameMetaInfo.candyList[i].tag = "good";
-            else
-                GameMetaInfo.candyList[i].tag = "bad";
-        }*/
+
     }
 
     // Update is called once per frame

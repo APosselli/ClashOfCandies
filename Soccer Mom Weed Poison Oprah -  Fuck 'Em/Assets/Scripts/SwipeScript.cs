@@ -17,6 +17,8 @@ public class SwipeScript : MonoBehaviour
     private bool startPosSet = false;
     private GameObject currentCandy;
     private CandyGenerator candyGenerator;
+    private ParticleSystem goodEffect;
+    private ParticleSystem badEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,8 @@ public class SwipeScript : MonoBehaviour
 
         currentCandy = GameObject.Find("CurrentCandy");
         candyGenerator = GameObject.Find("CandyGenerator").GetComponent<CandyGenerator>();
+        goodEffect = GameObject.Find("Particle_Good").GetComponent<ParticleSystem>();
+        badEffect = GameObject.Find("Particle_Bad").GetComponent<ParticleSystem>();
         objectPos = currentCandy.transform.position;
     }
 
@@ -73,11 +77,13 @@ public class SwipeScript : MonoBehaviour
                 if (candyChild.tag == "bad")
                 {
                     // The user correctly disposed of a bad candy
+                    badEffect.Play(true);
                     GameState.Instance.AddToScore(1);
                 }
                 else if (candyChild.tag == "good")
                 {
                     // The user incorrectly disposed of a good candy
+                    goodEffect.Play(true);
                     GameState.Instance.DecrementLives();
                 }
 
@@ -92,11 +98,13 @@ public class SwipeScript : MonoBehaviour
                 // The user incorrectly saved a bad candy, poisoning their child and triggering a game over
                 if (candyChild.tag == "bad")
                 {
+                    badEffect.Play(true);
                     GameState.Instance.InvokeGameOver();
                     return;
                 }
 
                 // The user correctly saved a good candy
+                goodEffect.Play(true);
                 GameState.Instance.AddToScore(1);
             }
 
