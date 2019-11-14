@@ -15,6 +15,7 @@ public class HandController : MonoBehaviour
     public const float m_TimeBeforeReach = 2;
     private float m_TimeElapsed;
     private int premiumCandyCount = 1;
+    private bool gameover = false;
 
     private bool reaching = false;
     // Start is called before the first frame update
@@ -32,8 +33,9 @@ public class HandController : MonoBehaviour
     {
         m_TimeElapsed += Time.deltaTime;
         m_percentTravelled = (m_TimeElapsed - m_TimeBeforeReach) / m_timeToEnd;
-        if (m_percentTravelled >= 1) //Game Over Here
+        if (m_percentTravelled >= 1 && !gameover) //Game Over Here
         {
+            gameover = true;
             GameState.Instance.InvokeGameOver();
         }
         else
