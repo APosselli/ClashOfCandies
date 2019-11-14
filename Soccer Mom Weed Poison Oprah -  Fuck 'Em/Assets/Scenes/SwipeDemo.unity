@@ -1617,6 +1617,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2042719335}
     m_Modifications:
+    - target: {fileID: 3803835469253228276, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
+        type: 3}
+      propertyPath: m_Name
+      value: ExchangePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3803835469253228276, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5174807671266774927, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
       propertyPath: m_Name
@@ -1786,7 +1796,7 @@ PrefabInstance:
     - target: {fileID: 5174807669849751313, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.9019608
+      value: 0.7490196
       objectReference: {fileID: 0}
     - target: {fileID: 5174807670386105961, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
@@ -1801,12 +1811,12 @@ PrefabInstance:
     - target: {fileID: 5174807670386105961, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 310.3
+      value: -227.3
       objectReference: {fileID: 0}
     - target: {fileID: 5174807670386105961, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -122.4
+      value: 837.7
       objectReference: {fileID: 0}
     - target: {fileID: 5174807670596580832, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
         type: 3}
@@ -1932,6 +1942,11 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1566850844}
+    - target: {fileID: 5174807670057450004, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.97
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb7ac2c82f80c04c9cb2d4fa45cb557, type: 3}
 --- !u!1 &1566850843 stripped

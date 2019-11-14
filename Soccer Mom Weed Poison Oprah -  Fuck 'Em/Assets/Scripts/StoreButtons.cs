@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StoreButtons : MonoBehaviour
 {
 
-    private int candyCost = 9;
+    private int candyCost = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,11 @@ public class StoreButtons : MonoBehaviour
 
     public void BuyCandy()
     {
-        if (GameMetaInfo.Instance.Money > candyCost)
+        if (GameMetaInfo.Instance.Money < candyCost)
+        {
+            transform.Find("RemindPanel").gameObject.SetActive(true);
+        }
+        else if (GameMetaInfo.Instance.Money >= candyCost)
         {
             GameMetaInfo.Instance.Money -= candyCost;
             GameMetaInfo.Instance.PremiumCandy++;
@@ -44,5 +48,16 @@ public class StoreButtons : MonoBehaviour
         }
         GameMetaInfo.Instance.SwitchPlayer();
         SceneManager.LoadScene("NewsScene");
+    }
+
+    public void GoToBuyCoin()
+    {
+        transform.Find("PurchasePanel").gameObject.SetActive(true);
+        transform.Find("RemindPanel").gameObject.SetActive(false);
+    }
+
+    public void GoBackToStore()
+    {
+        transform.Find("RemindPanel").gameObject.SetActive(false);
     }
 }
